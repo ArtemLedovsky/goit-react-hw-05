@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 12px 48px;
+  background-color: #222222;
+}
+.navList {
+  display: flex;
+  gap: 24px;
+}
+.navLink {
+  color: #f4eae0;
+  transition: all 250ms ease;
+  text-decoration: none;
+  border-top: 2px solid #f4eae0;
+  border-bottom: 2px solid #f4eae0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  &:hover {
+    color: #f4dfc8;
+    border-color: #f4dfc8;
+  }
+}

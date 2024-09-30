@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.item {
+  &:hover .link {
+  }
+}
+.link {
+  text-decoration: none;
+  color: #222222;
+  &:hover {
+    color: #d00000;
+  }
+}

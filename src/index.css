@@ -26,3 +26,11 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.active {
+  color: #d00000;
+  border-color: #f4dfc8;
+  &:hover {
+    color: #d00000;
+  }
+}
