@@ -29,6 +29,7 @@ img {
 .active {
   color: #d00000;
   border-color: #f4dfc8;
+  pointer-events: none;
   &:hover {
     color: #d00000;
     cursor: default;

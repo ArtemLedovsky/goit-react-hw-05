@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 24px 48px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #222222;
+  &:hover {
+    color: #d00000;
+  }
+}

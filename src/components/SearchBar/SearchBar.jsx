@@ -6,8 +6,9 @@ const SearchBar = ({ handleSetSearchQuery, plchldr }) => {
     searchQuery: "",
   };
 
-  const handleSubmit = (values) => {
+  const handleSubmit = (values, options) => {
     handleSetSearchQuery(values.searchQuery);
+    options.resetForm();
   };
 
   return (
@@ -18,7 +19,7 @@ const SearchBar = ({ handleSetSearchQuery, plchldr }) => {
             type="text"
             name="searchQuery"
             autoComplete="off"
-            placeholder={plchldr}
+            placeholder={plchldr || `Type something...`}
             className={s.input}
           />
           <button type="submit" className={s.btn}>

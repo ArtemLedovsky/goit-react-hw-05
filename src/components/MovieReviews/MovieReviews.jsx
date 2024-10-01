@@ -18,7 +18,9 @@ const MovieReviews = () => {
     };
     getData();
   }, [movieId]);
-
+  if (!movie) {
+    return;
+  }
   return (
     <div className={s.wrapper}>
       {movie.length ? (
