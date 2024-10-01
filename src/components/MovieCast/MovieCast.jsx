@@ -32,7 +32,7 @@ const MovieCast = () => {
               // src={`https://image.tmdb.org/t/p/original/${item.profile_path}`}
               src={
                 item.profile_path
-                  ? `https://image.tmdb.org/t/p/original/${item.profile_path}`
+                  ? `https://image.tmdb.org/t/p/w200/${item.profile_path}`
                   : defaultImg
               }
               alt="img"
