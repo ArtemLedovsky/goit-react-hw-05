@@ -1,6 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import s from "./MovieList.module.css";
 
+const defaultImg =
+  "https://dummyimage.com/400x600/cdcdcd/000.jpg&text=No+poster";
+
 const MovieList = ({ movies }) => {
   const location = useLocation();
   return (
@@ -8,7 +11,20 @@ const MovieList = ({ movies }) => {
       <ul className={s.list}>
         {movies.map((item) => (
           <li key={item.id} className={s.item}>
-            <Link to={item.id.toString()} state={location} className={s.link}>
+            <Link
+              to={`/movies/${item.id.toString()}`}
+              state={location}
+              className={s.link}
+            >
+              <img
+                src={
+                  item.poster_path
+                    ? `https://image.tmdb.org/t/p/original/${item.poster_path}`
+                    : defaultImg
+                }
+                alt={item.title}
+                className={s.image}
+              />
               {item.title}
             </Link>
           </li>

@@ -1,0 +1,50 @@
+.mainWrap {
+  padding: 48px;
+}
+.goBackBtn {
+  position: absolute;
+  top: 72px;
+  text-decoration: none;
+  color: #222222;
+  &:hover {
+    color: #d00000;
+  }
+}
+
+.filmWrap {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  /* justify-content: center; */
+}
+.image {
+  border-radius: 4px;
+  height: 320px;
+  border: 1px solid #222222;
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  & h2 {
+    font-size: 48px;
+  }
+}
+
+.linksWrap {
+  display: flex;
+  margin: 0 auto;
+  gap: 12px;
+  width: 200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.subpageLink {
+  text-decoration: none;
+  color: #222222;
+  border-bottom: 2px solid #222222;
+  &:hover {
+    color: #d00000;
+  }
+}
