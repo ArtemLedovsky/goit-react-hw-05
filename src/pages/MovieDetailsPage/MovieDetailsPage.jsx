@@ -31,11 +31,7 @@ const MovieDetailsPage = () => {
     getData();
   }, [movieId]);
   if (!movie.genres) {
-    return (
-      <p>
-        <Loader />
-      </p>
-    );
+    return;
   }
 
   return (
